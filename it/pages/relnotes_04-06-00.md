@@ -1,6 +1,5 @@
 
-Release notes 04.06.00 del 19/05/2014
-===
+# Release notes 04.06.00 del 19/05/2014
 
 ## Anomalie ![](uploads/images/bugs.gif) 
 
