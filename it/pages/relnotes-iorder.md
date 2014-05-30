@@ -1,8 +1,6 @@
-# Note di rilascio
+# Release notes
 
-Attenzione: questa e' una prova 
-
-## Rel. 4.6.0 del 19/05/2014
+## Release notes 4-6-0 del 19/05/2014
 
 ### Anomalie
 
@@ -28,13 +26,15 @@ Gestiti i listini per varianti/combinazioni.
 
 E' prevista una nuova modalità di inserimento nuovi clienti contestualmente alla presa dell'ordine.
 
+
+
 **_Inserimento nuovi clienti in connettore iB_** - (rif: 9211)
 
 Il connettore di iB e' stato modificato per consentire l'inserimento di nuovi clienti in creazione nuovi ordini
 
 -------
 
-## Rel. 4.5.0 del 30/04/2014
+## Release notes 4-5-0 del 30/04/2014
 
 ### Anomalie
 
@@ -73,7 +73,7 @@ Migliorata gestione della memoria nella galleria nel caso di visualizzazione ant
 
 -------
 
-## Rel. 4.4.0 del 17/04/2014
+## Release notes 4-4-0 del 17/04/2014
 
 ### Anomalie
 
@@ -125,7 +125,7 @@ Il parametro si chiama PercentualeSuPrezzoMinimoVendita
 
 -------
 
-## Rel. 4.3.0 del 21/03/2014
+## Release notes 4-3-0 del 21/03/2014
 
 ### Anomalie
 
@@ -185,7 +185,7 @@ Ora vengono stampate le note di riga se esistono
 
 -------
 
-## Rel. 4.2.0 del 31/01/2014
+## Release notes 4-2-0 del 31/01/2014
 
 ### Anomalie
 
@@ -224,6 +224,185 @@ Nel report del copia commissione, nel caso di taglie e colori, vengono mostrate 
 
 -------
 
-## Versioni vecchie
+## Release notes 4-1-0 del 24/01/2014
 
+### Anomalie
+
+**_Corretto crash nella galleria, solo su iPhone_** - (rif: 8944)
+
+Il problema, che si verificava solo su iphone e nella condivisione dei files, è stato risolto 
+
+### Novità
+
+**_Nuovo splendido design per iOS 7_** - (rif: 8827)
+
+Abbiamo completamente rinnovato la nostra app per te che usi iOS 7.
+
+**_Ordini veloci: icona sconti evidenzia la presenza di sconti_** - (rif: 8895)
+
+Ora l'icona degli sconti rende più evidente la presenza o meno degli sconti
+
+**_Miglioramenti per ordini Taglie e Colori_** - (rif: 8937)
+
+Aggiunto totale importo nel report.
+Migliorato riepilogo ordini temporanei.
+Aggiunta la data di consegna per i campioni.
+Fixati malfunzionamenti con i picker di scelta nella testata ordine.
+Altri bug fix minori.
+
+
+-------
+
+## Release notes 3-3-0 del 28/11/2013
+
+### Anomalie
+
+**_Sincronizzazione righe documento Cliente_** - (rif: 8969)
+
+Risolto problema sincronizzazione righe documento Cliente, che non erano sempre correttamente sincronizzate
+
+### Novità
+
+**_Sincronizzazione e visualizzazione della descrizione dei prodotti e dei pagamenti nella lingua del dispositivo_** - (rif: 8874)
+
+Sincronizzazione e visualizzazione della descrizione dei prodotti e dei pagamenti nella lingua del dispositivo
+
+**_Aggiunta la gestione delle valute_** - (rif: 8875)
+
+Aggiunta la gestione delle valute
+
+**_Aggiunta nazione in clienti/fornitori_** - (rif: 8936)
+
+Aggiunta visualizzazione attributo nazione in visualizzazione schede cliente/fornitori
+
+-------
+
+## Release notes 3-2-0 del 18/11/2013
+
+### Anomalie
+
+**_Corretta gestione date per filtri schede_** - (rif: 8940)
+
+Nel caso di utilizzo in app con scelta localizzazione diversa da italiana erano possibili degli errori nella gestione delle date nei filtri.  
+
+**_Form ordine da Catalogo_** - (rif: 8941)
+
+Corretto funzionalità su form ordine da catalogo su iOS 7
+
+**_Crash in ordini salvati_** - (rif: 8953)
+
+Se si prova a cancellare gli ordini relativi ad un cliente (tramite swipe), l'app andava in crash.
+Ora risolto il problema.
+
+**_Lentezza digitazione ricerca in ordini veloci_** - (rif: 8959)
+
+Corretto problema su iOS 7
+
+### Novità
+
+**_Migliorata gestione delle risorse durante la sincronizzazione dei dati_** - (rif: 8372)
+
+Sono state migliorate la gestione della memoria e della stabilità generale dell'applicazione durante il processo di sincronizzazione
+
+-------
+
+## Release notes 3-1-0 del 29/10/2013
+
+### Anomalie
+
+**_Corretto problema visibilità note Leads_** - (rif: 8894)
+
+Dopo sincronizzazione, se presenti nuove note da inviare, ora sono visibili sia le nuove note che quelle sincronizzate
+
+**_Bug fixing Alerts in iOS 7_** - (rif: 8911)
+
+Corretti vari problemi con Alerts (sincronizzazione dati, login, ...) dovuti al cambio di gestione in iOS 7.
+
+**_Aggiunto controllo sulla lunghezza delle note_** - (rif: 8923)
+
+Aggiunto controllo sulla lunghezza delle note in input, al fine di evitare di importare sul gestionale dati troncati.
+
+### Novità
+
+**_Aggiunta la possibilità di aprire l'immagine del prodotto dagli ordini veloci_** - (rif: 8870)
+
+Aggiunta la possibilità di aprire l'immagine del prodotto dagli ordini veloci
+
+**_Aggiunta la funzionalità dei Report per gli ordini veloci_** - (rif: 8871)
+
+Aggiunta la funzionalità dei Report per gli ordini veloci
+
+**_Aggiunto form ordine da catalogo con la modifica della quantità_** - (rif: 8872)
+
+Aggiunto form ordine da catalogo con la modifica della quantità, attivabile da apposito parametro
+
+**_Aggiunta la possibilità di utilizzare l'app in lingua inglese_** - (rif: 8873)
+
+Aggiunta la possibilità di utilizzare l'app in lingua inglese (oltre che italiano).
+
+**_Gestione taglie e colori_** - (rif: 8884)
+
+Possibilità di attivare il modulo ordini taglie e colori per mondo fashion
+
+**_Gestione reports personalizzati_** - (rif: 8889)
+
+E' resa disponibile la possibilità di personalizzare i layout dei reports in AM
+
+**_Aggiunto filtri nella visualizzazione dei Lead_** - (rif: 8900)
+
+Aggiunto il filtro sugli stati nella visualizzazione dei Lead e esteso la ricerca standard agli altri attriubuti visibili nella lista.
+
+**_Migliorato l'inserimento della descrizione di una nuova nota per i Clienti e per i Lead_** - (rif: 8901)
+
+Migliorato l'inserimento della descrizione di una nuova nota per i Clienti e per i Lead
+
+### Modifiche
+
+**_Possibiltà di aggiungere sempre nuove note_** - (rif: 8876)
+
+Ora la possibilita' di aggiungere nuove note non dipende dalla modificabilita' dei dati anagrafici del cliente.
+
+-------
+
+## Release notes 3-0-0 del 09/09/2013
+
+### Anomalie
+
+**_Corretto bug su salto pagina dei reports pdf generati_** - (rif: 8750)
+
+E' stato reso dinamico il numero degli elementi nel dettaglio del report
+
+**_Bug filtro documenti in schede_** - (rif: 8837)
+
+Eliminato crash in selezione tipi documento se non presenti documenti
+
+**_Mappa Clienti: corretto controllo su ultimo ordine effettuato_** - (rif: 8847)
+
+Ora il controllo su "ultimo ordine effettuato" valorizza il colore del pin correttamente
+
+### Novità
+
+**_Aggiunta funzionalità di ricerca alla galleria._** - (rif: 8373)
+
+Aggiunta funzionalità di ricerca alla galleria.
+
+**_Interfaccia LM Partner_** - (rif: 8829)
+
+Nascosti i pulsanti in alto che non servono.
+Aggiunto pulsante per configurare i parametri a livello di progetto
+
+**_Aggiunta presa ordini da foto._** - (rif: 8846)
+
+Aggiunta presa ordini da item foto (preview item a tutto schermo).
+
+**_Miglioramenti login/logout_** - (rif: 8857)
+
+- non è possibile rientrare nell'applicazione una volta fatto il logout/esci
+- altri miglioramenti validazione login
+
+### Modifiche
+
+**_Non viene ricalcolato il prezzo automatico se viene imputato un prezzo da parte dell'utente_** - (rif: 8809)
+
+In inserimento ordine viene disabilitato il caricamento di default degli sconti o del prezzo dopo aver modificato la quantita se, almeno una volta, i prezzi o gli sconti sono stati modificati direttamente dall'utente. In questo caso questi non vengono più ricalcolati.
 
