@@ -1,6 +1,6 @@
-# Release notes
+# Note di Rilascio
 
-## Rel. notes 4-6-0 del 19/05/2014
+## Rel. 4.6.0 del 19/05/2014
 
 ### Anomalie
 
@@ -34,7 +34,7 @@ Il connettore di iB e' stato modificato per consentire l'inserimento di nuovi cl
 
 -------
 
-## Rel. notes 4-5-0 del 30/04/2014
+## Rel. 4.5.0 del 30/04/2014
 
 ### Anomalie
 
@@ -73,7 +73,7 @@ Migliorata gestione della memoria nella galleria nel caso di visualizzazione ant
 
 -------
 
-## Rel. notes 4-4-0 del 17/04/2014
+## Rel. 4.4.0 del 17/04/2014
 
 ### Anomalie
 
@@ -125,7 +125,7 @@ Il parametro si chiama PercentualeSuPrezzoMinimoVendita
 
 -------
 
-## Rel. notes 4-3-0 del 21/03/2014
+## Rel. 4.3.0 del 21/03/2014
 
 ### Anomalie
 
@@ -185,7 +185,7 @@ Ora vengono stampate le note di riga se esistono
 
 -------
 
-## Rel. notes 4-2-0 del 31/01/2014
+## Rel. 4.2.0 del 31/01/2014
 
 ### Anomalie
 
@@ -224,7 +224,7 @@ Nel report del copia commissione, nel caso di taglie e colori, vengono mostrate 
 
 -------
 
-## Rel. notes 4-1-0 del 24/01/2014
+## Rel. 4.1.0 del 24/01/2014
 
 ### Anomalie
 
@@ -253,7 +253,7 @@ Altri bug fix minori.
 
 -------
 
-## Rel. notes 3-3-0 del 28/11/2013
+## Rel. 3.3.0 del 28/11/2013
 
 ### Anomalie
 
@@ -277,7 +277,7 @@ Aggiunta visualizzazione attributo nazione in visualizzazione schede cliente/for
 
 -------
 
-## Rel. notes 3-2-0 del 18/11/2013
+## Rel. 3.2.0 del 18/11/2013
 
 ### Anomalie
 
@@ -306,7 +306,7 @@ Sono state migliorate la gestione della memoria e della stabilità generale dell
 
 -------
 
-## Rel. notes 3-1-0 del 29/10/2013
+## Rel. 3.1.0 del 29/10/2013
 
 ### Anomalie
 
@@ -364,7 +364,7 @@ Ora la possibilita' di aggiungere nuove note non dipende dalla modificabilita' d
 
 -------
 
-## Rel. notes 3-0-0 del 09/09/2013
+## Rel. 3.0.0 del 09/09/2013
 
 ### Anomalie
 
@@ -405,4 +405,5 @@ Aggiunta presa ordini da item foto (preview item a tutto schermo).
 **_Non viene ricalcolato il prezzo automatico se viene imputato un prezzo da parte dell'utente_** - (rif: 8809)
 
 In inserimento ordine viene disabilitato il caricamento di default degli sconti o del prezzo dopo aver modificato la quantita se, almeno una volta, i prezzi o gli sconti sono stati modificati direttamente dall'utente. In questo caso questi non vengono più ricalcolati.
+
 
