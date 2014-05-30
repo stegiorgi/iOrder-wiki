@@ -29,7 +29,7 @@
   * [Connettore iB](pages/connettore-ib.md)
   * [Connettore iB Alert](pages/connettore-ib-alert.md)
 
-[Release notes](pages/relnotes-iorder.md)
+[Note di rilascio](pages/relnotes-iorder.md)
 
 <!--
   * [04.06.00 del 10/12/2013](pages/relnotes-iorder_4-6-0.md)

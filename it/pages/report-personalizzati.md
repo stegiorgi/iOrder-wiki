@@ -196,3 +196,8 @@ Tale report comprende i seguenti segnaposti, popolati dinamicamente dall'applica
   *   {{codAgente}} : valorizzato con il codice agente dell'utente loggato.
   *   {{desAgente}} : valorizzato con la descrizione dell'agebte loggato.
   *   {{total}} : valorizzato con il totale del documento.
+
+  ## Dimensione del logo
+  I report standard prevedono un logo di 512x512 pixel con estensione PNG. Questa è la dimensione consigliata ma,
+  ovviamente, se si effettua una personalizzazione del report, è probabilmente necessario adattare anche la dimensione
+  del logo.
