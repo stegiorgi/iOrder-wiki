@@ -1,6 +1,6 @@
 # Release notes
 
-## Release notes 4-6-0 del 19/05/2014
+## Rel. notes 4-6-0 del 19/05/2014
 
 ### Anomalie
 
@@ -34,7 +34,7 @@ Il connettore di iB e' stato modificato per consentire l'inserimento di nuovi cl
 
 -------
 
-## Release notes 4-5-0 del 30/04/2014
+## Rel. notes 4-5-0 del 30/04/2014
 
 ### Anomalie
 
@@ -73,7 +73,7 @@ Migliorata gestione della memoria nella galleria nel caso di visualizzazione ant
 
 -------
 
-## Release notes 4-4-0 del 17/04/2014
+## Rel. notes 4-4-0 del 17/04/2014
 
 ### Anomalie
 
@@ -125,7 +125,7 @@ Il parametro si chiama PercentualeSuPrezzoMinimoVendita
 
 -------
 
-## Release notes 4-3-0 del 21/03/2014
+## Rel. notes 4-3-0 del 21/03/2014
 
 ### Anomalie
 
@@ -185,7 +185,7 @@ Ora vengono stampate le note di riga se esistono
 
 -------
 
-## Release notes 4-2-0 del 31/01/2014
+## Rel. notes 4-2-0 del 31/01/2014
 
 ### Anomalie
 
@@ -224,7 +224,7 @@ Nel report del copia commissione, nel caso di taglie e colori, vengono mostrate 
 
 -------
 
-## Release notes 4-1-0 del 24/01/2014
+## Rel. notes 4-1-0 del 24/01/2014
 
 ### Anomalie
 
@@ -253,7 +253,7 @@ Altri bug fix minori.
 
 -------
 
-## Release notes 3-3-0 del 28/11/2013
+## Rel. notes 3-3-0 del 28/11/2013
 
 ### Anomalie
 
@@ -277,7 +277,7 @@ Aggiunta visualizzazione attributo nazione in visualizzazione schede cliente/for
 
 -------
 
-## Release notes 3-2-0 del 18/11/2013
+## Rel. notes 3-2-0 del 18/11/2013
 
 ### Anomalie
 
@@ -306,7 +306,7 @@ Sono state migliorate la gestione della memoria e della stabilità generale dell
 
 -------
 
-## Release notes 3-1-0 del 29/10/2013
+## Rel. notes 3-1-0 del 29/10/2013
 
 ### Anomalie
 
@@ -364,7 +364,7 @@ Ora la possibilita' di aggiungere nuove note non dipende dalla modificabilita' d
 
 -------
 
-## Release notes 3-0-0 del 09/09/2013
+## Rel. notes 3-0-0 del 09/09/2013
 
 ### Anomalie
 
