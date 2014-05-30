@@ -1,5 +1,7 @@
 # Note di rilascio
 
+Attenzione: questa e' una prova 
+
 ## Rel. 4.6.0 del 19/05/2014
 
 ### Anomalie

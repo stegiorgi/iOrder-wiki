@@ -71,10 +71,10 @@ E' possibile specificare inoltre un eventuale ordinamento tra i file mettendo un
  | Nome file                          | Descrizione                                                                                                  |
  | -
  | Listino.pdf                        | Documento con nome _Listino_ non associato ad alcun articolo e senza ordinamento specifico                   |
- | Libreria Kwaba [kw07](kw07.md).jpg | Immagine con nome _Libreria Kwaba_ associata all'articolo avente codice _kw07_ e senza ordinamento specifico |
+ | Libreria Kwaba \[kw07\].jpg | Immagine con nome _Libreria Kwaba_ associata all'articolo avente codice _kw07_ e senza ordinamento specifico |
  | Foresta {1}.png                    | Immagine con nome _Foresta_ non associata ad alcun articolo ma avente un ordinamento di valore 1             |
- | Dépliant [0567](0567.md) {2}.avi   | Video con nome _Dépliant_ associato all'articolo avente codice _0567_ e con ordinamento di valore 2          |
- | [123](123.md).jpg                  | immagine associata direttamente all'articolo avente codice _123_ e senza ordinamento specifico               |
+ | Depliant \[0567\] {2}.avi   | Video con nome _Dépliant_ associato all'articolo avente codice _0567_ e con ordinamento di valore 2          |
+ | \[123\]123.jpg                  | immagine associata direttamente all'articolo avente codice _123_ e senza ordinamento specifico               |
 
 Tipi di file supportati
 ---
