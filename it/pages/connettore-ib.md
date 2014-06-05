@@ -8,14 +8,10 @@ Il programma che si occupa di esportare e importare i dati da e per il gestional
 
 L'installazione iniziale è molto semplice.
 Basta scaricare l'ultima versione del file ConnettoreBusiness.zip e scompattarla nella cartella di installazione di Business (es:C:\Programmi\Bus).
-L'ultima versione è sempre disponibile a questo link: 
-
-  * <https://github.com/Apex-net/ConnettoreiB/releases/latest/>
-
-La lista completa di tutte le versioni è disponibile a questo indirizzo:
+L'ultima versione (e le versioni precedenti) è sempre disponibile a questo link: 
 
   * <https://github.com/Apex-net/ConnettoreiB/releases>
-  
+
 dove:
 
   *  ConnettoreBusiness.zip contiene tutte le dll per la prima installazione
