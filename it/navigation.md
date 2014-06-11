@@ -21,14 +21,14 @@
 
 [Documenti]()
 
-  * [HTML5 vs Native apps](pages/html5-vs-native.md)
   * [Attivazione nuovo progetto](pages/attivazione-nuovo-progetto.md)
   * [Import del Catalogo](pages/import-catalogo.md)
   * [Tracciati](pages/tracciati.md)
   * [Report personalizzati](pages/report-personalizzati.md)
   * [Connettore iB](pages/connettore-ib.md)
   * [Connettore iB Alert](pages/connettore-ib-alert.md)
-
+  * [HTML5 vs Native apps](pages/html5-vs-native.md)
+  
 [Note di rilascio](pages/relnotes-iorder.md)
 
 <!--
