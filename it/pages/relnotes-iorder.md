@@ -1,5 +1,30 @@
 ﻿# Note di Rilascio
 
+## Rel. 4.6.10 del 11/06/2014
+
+### Anomalie
+
+**_Problema su erronea cancellazione righe di testate per ordini Taglie e Colori_** - (rif: 9243)
+
+Risolto ora il problema.
+
+**_Risolto problema su valorizzazione pagamento_** - (rif: 9254)
+
+Ora il codice viene sempre correttamente valorizzato.
+Il problema era presente solo sulla versione 4.6.0 dell'app.
+
+### Novità
+
+**_Aggiunte nuove informazione nella visualizzazione della lista delle testate documenti._** - (rif: 9233)
+
+Aggiunte nuove informazione nella visualizzazione della lista delle testate documenti: descrizione, numdoc/serie e note.
+
+**_Alert pagamenti scaduti_** - (rif: 9234)
+
+Nel dettaglio della scheda cliente presentazione "alert" nel caso di pagamenti scaduti; l'alert permette di portarsi nel dettaglio delle scadenze.
+
+-------
+
 ## Rel. 4.6.0 del 19/05/2014
 
 ### Anomalie
@@ -529,46 +554,5 @@ Aggiunta possibilità di selezionare il cliente con cui viene effettuato l'ordin
 
 Ad esempio nella lista prodotti aggiunta una gestione ordinamento (simile a quella di ordini veloci)
 
-
--------
-
-## Rel. 2.5.0 del 24/05/2013
-
-### Anomalie
-
-**_Risolti problemi con dimensioni immagini anteprima in lista prodotti_** - (rif: 8752)
-
-Nel caso ci siano immagini con dimensioni inferiori al limite minimo stabilito vengono comunque gestite correttamente le dimensioni delle immagini di anteprima
-
-### Novità
-
-**_Miglioramenti dei downloads per la Galleria_** - (rif: 8657)
-
-- gestione download thumbnail asset come file (non cache http)
-- migliorata velocità di cancellazione di tutti i file
-- migliorata velocità inizializzazione iniziale
-
-**_Aggiunta informazioni in liste Clienti Fornitori_** - (rif: 8734)
-
-L'elenco dei clienti e dei fornitori, nel modulo schede, si presentano come quello
-del modulo order, con l'indirizzo e le altre informazioni visibili in lista.
-
-**_Aggiunta filtro in Incassi_** - (rif: 8735)
-
-Aggiunto nel filtro, oltre che incassate e da
-incassare, anche le scadute e non scadute
-
-**_Ordinamento righe in ordini veloci_** - (rif: 8746)
-
-Impostato, come standard, l'ordinamento per data/discendente.
-
-**_Modifiche visualizzazione dati relativi a sconti._** - (rif: 8759)
-
-- Nella lista degli ordini veloci è possibile vedere se sono presenti sconti non nulli, ed eventualmente ispezionarli in dettaglio tramite appostito bottone.
-- Lo sconto totale da listini non tiene conto degli ScontiFull.
-
-**_Aggiunti dati visualizzazione in ordini salvati_** - (rif: 8775)
-
-Vengono visualizzati um e qta ordine, sia nella lista che nel report.
 
 
