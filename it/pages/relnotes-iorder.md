@@ -1,6 +1,6 @@
 ﻿# Note di Rilascio
 
-## Rel. 4.6.10 del 11/06/2014
+## Rel. 4.6.10 del 13/06/2014
 
 ### Anomalie
 
