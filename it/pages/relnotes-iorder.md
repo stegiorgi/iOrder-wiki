@@ -1,5 +1,29 @@
 ﻿# Note di Rilascio
 
+## Rel. 4.7.8 del 01/07/2014
+
+### Anomalie
+
+**_Invio dati da ipad_** - (rif: 9135)
+
+Ora nella funzione di invio dati non viene visualizzato il "check mark" per gli ordini se non ci sono ordini inviati.
+
+**_Mantenimento filtro selezione su cambio sezione._** - (rif: 9240)
+
+Se l'utente cambia sezione, i filtri non vengono più persi ma mantenuti per le volte successive.
+
+**_Sistemata anomalia sui filtri di wTrendy su prodotti_** - (rif: 9251)
+
+Sistemata anomalia sui filtri di wTrendy che nascondeva tutti i prodotti se non c'era nessuna famiglia/sottofamiglia.
+
+### Modifiche
+
+**_Modificata visualizzazione e modifica delle note clienti e leads._** - (rif: 9227)
+
+Migliorata la visualizzazione e modifica delle note clienti e leads.
+
+-------
+
 ## Rel. 4.6.10 del 13/06/2014
 
 ### Anomalie
@@ -527,32 +551,5 @@ Nel form ordine, quando si sceglie destinazioni diverse ora viene proposto:
 - Tutte le altre destinazioni diverse associate al cliente
 
 Da ricordare che se viene preso un ordine da storico, la destinazione selezionata è l'ultima destinazione (quella presente sullo storico).
-
--------
-
-## Rel. 2.6.0 del 31/05/2013
-
-### Novità
-
-**_CRM:  nuova funzione Schede Leads_** - (rif: 8717)
-
-Aggiunta nuova funzione Schede Leads in modulo CRM
-
-**_CRM: Aggiunta nuova funzione Offerte_** - (rif: 8719)
-
-Possibilità di vedere le offerte raggruppate per lead. Varie possibilità di filtro ed ordinamento.
-
-**_CRM: Nuovi Leads_** - (rif: 8743)
-
-Aggiunta nuova funzione Nuovi Leads in modulo CRM.
-
-**_Giro visite: selezione cliente_** - (rif: 8753)
-
-Aggiunta possibilità di selezionare il cliente con cui viene effettuato l'ordine attraverso il giro viste.
-
-**_Scheda prodotti: miglioramenti visualizzazione dati_** - (rif: 8779)
-
-Ad esempio nella lista prodotti aggiunta una gestione ordinamento (simile a quella di ordini veloci)
-
 
 
