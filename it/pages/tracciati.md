@@ -1,4 +1,3 @@
-
 # Specifiche Tracciati Record
 
 
@@ -45,19 +44,6 @@ Tabella anagrafica che contiene tutti i prodotti
 | 23| MAX_EXTRA_SCONTO| massimo extra sconto consentito| Decimal| 14,6|
 | 24| COD_SVILUPPO_BASE| Codice sviluppo base (wtrendy)| Character| 255|
 | 25| DAT_ULT_MOD| Data di ultima modifica del record. Attenzione: Questa data deve essere composta nel seguente formato: Giorno (2 caratteri) + Mese (2 caratteri) + Anno (4 caratteri) + Ore (2 caratteri) + Minuti (2 caratteri) + Secondi (2 caratteri).| DateTime| 16|
-
-##io_art_conf.dat
-Anagrafica dei codici confezione
-
-| Prg| Campo | Descrizione| Tipo| Lungh.|  
-|- 
-| 1| CHIAVE| Chiave univoca del record composta dai dati di origine| Character| 250|
-| 2| COD_ART| Codice dell'Articolo| Character| 25|
-| 3| COD_DITTA| Codice della ditta. Identifica univocamente una ditta dentro il gestionale che, nel caso sia multisocietario, può contenere dati di più aziende| Character| 50|
-| 4| COD_CONF| Codice della confezione| Character| 4|
-| 5| PZ_CONF| Pezzi della confezione| Decimal| 12,3|
-| 6| FLG_PREF| Flag per definire il preferenziale| Integer| 10|
-| 7| DAT_ULT_MOD| Data di ultima modifica del record. Attenzione: Questa data deve essere composta nel seguente formato: Giorno (2 caratteri) + Mese (2 caratteri) + Anno (4 caratteri) + Ore (2 caratteri) + Minuti (2 caratteri) + Secondi (2 caratteri).| DateTime| 16|
 
 ##io_art_lang.dat
 articoli in lingua
@@ -177,35 +163,41 @@ tabella di anagrafica clienti/fornitore di un progetto o ditta (azienda) che vie
 | 28| AGENZIA| Agenzia| Character| 255|
 | 29| LISTINO_ANAGRAFICO| Listino anagrafico| Character| 255|
 | 30| VALUTA| Descrizione della valuta (Es: Euro)| Character| 100|
-| 31| SCONTI_ANAG_PERC| Sconti anagrafici in percentuale| Character| 255|
-| 32| SCONTI_ANAG_IMP| Sconti anagrafica imponibile| Decimal| 14,6|
-| 33| MAGGIORAZIONE_ANAG_PERC| Maggiorazione anagrafica percentuale| Decimal| 6,3|
-| 34| SCONTO_PIEDE| Sconto piede| Decimal| 6,3|
-| 35| COD_LISTINO| Codice del listino anagrafico| Character| 50|
-| 36| COD_CONDPAG| Codice del listino anagrafico| Character| 50|
-| 37| COD_VALUTA| | Character| 50|
-| 38| MACROAREA| Macroarea di riferimento dell'azienda| Character| 255|
-| 39| DATA_CREAZIONE| Data di creazione del record| Date| 10|
-| 40| AREA| Area di appartenenza dell'azienda| Character| 255|
-| 41| ZONA| Zona (campo descrittivo)| Character| 255|
-| 42| MACROCATEGORIA| Macrocategoria di appartenenza dell'azienda| Character| 255|
-| 43| DATA_ULT_DOC_NO_FT| Data dell'ultimo documento non fatturato| Date| 10|
-| 44| CATEGORIA| Categoria di appartenenza dell'azienda| Character| 255|
-| 45| SOTTOCATEGORIA| Categoria di appartenenza dell'azienda| Character| 255|
-| 46| DATA_ULT_DOC_FT| Data ultimo documento fatturato| Date| 10|
-| 47| DATA_ULT_ORDINE| Data dell'ultimo ordine| Date| 10|
-| 48| FIDO_AZIENDALE| Fido aziendale| Decimal| 15,2|
-| 49| DES_RAGGR1| Raggruppamento 1 (campo descrittivo)| Character| 255|
-| 50| DES_RAGGR2| Raggruppamento 2 (campo descrittivo)| Character| 255|
-| 51| DES_RAGGR3| Raggruppamento 3 (campo descrittivo)| Character| 255|
-| 52| COD_MACROAREA| Codice della Macroarea| Character| 50|
-| 53| COD_AREA| Codice dell'area| Character| 50|
-| 54| COD_ZONA| Codice dell'area| Character| 50|
-| 55| COD_MACROCATEGORIA| Codice della Macroarea| Character| 50|
-| 56| COD_CATEGORIA| Codice della Macroarea| Character| 50|
-| 57| COD_SOTTOCATEGORIA| Codice della Macroarea| Character| 50|
-| 58| FLG_NEW_CLIFOR| flag per specificare se questo cliente o fornitore deve abilitare l'inserimento di un nuovo cliente in fase di inserimento ordine| Integer| 2|
-| 59| DAT_ULT_MOD| Data di ultima modifica del record| DateTime| 16|
+| 31| SCO_PERC1| Sconto di testata 1| Decimal| 14,6|
+| 32| SCO_PERC2| Sconto di testata 2| Decimal| 14,6|
+| 33| SCO_PERC3| Sconto di testata 3| Decimal| 14,6|
+| 34| SCO_PERC4| Sconto di testata 4| Decimal| 14,6|
+| 35| SCO_PERC5| Sconto di testata 5| Decimal| 14,6|
+| 36| SCO_PERC6| Sconto di testata 6| Decimal| 14,6|
+| 37| SCONTI_ANAG_PERC| Sconti anagrafici in percentuale| Character| 255|
+| 38| SCONTI_ANAG_IMP| Sconti anagrafica imponibile| Decimal| 14,6|
+| 39| MAGGIORAZIONE_ANAG_PERC| Maggiorazione anagrafica percentuale| Decimal| 6,3|
+| 40| SCONTO_PIEDE| Sconto piede| Decimal| 6,3|
+| 41| COD_LISTINO| Codice del listino anagrafico| Character| 50|
+| 42| COD_CONDPAG| Codice del listino anagrafico| Character| 50|
+| 43| COD_VALUTA| | Character| 50|
+| 44| MACROAREA| Macroarea di riferimento dell'azienda| Character| 255|
+| 45| DATA_CREAZIONE| Data di creazione del record| Date| 10|
+| 46| AREA| Area di appartenenza dell'azienda| Character| 255|
+| 47| ZONA| Zona (campo descrittivo)| Character| 255|
+| 48| MACROCATEGORIA| Macrocategoria di appartenenza dell'azienda| Character| 255|
+| 49| DATA_ULT_DOC_NO_FT| Data dell'ultimo documento non fatturato| Date| 10|
+| 50| CATEGORIA| Categoria di appartenenza dell'azienda| Character| 255|
+| 51| SOTTOCATEGORIA| Categoria di appartenenza dell'azienda| Character| 255|
+| 52| DATA_ULT_DOC_FT| Data ultimo documento fatturato| Date| 10|
+| 53| DATA_ULT_ORDINE| Data dell'ultimo ordine| Date| 10|
+| 54| FIDO_AZIENDALE| Fido aziendale| Decimal| 15,2|
+| 55| DES_RAGGR1| Raggruppamento 1 (campo descrittivo)| Character| 255|
+| 56| DES_RAGGR2| Raggruppamento 2 (campo descrittivo)| Character| 255|
+| 57| DES_RAGGR3| Raggruppamento 3 (campo descrittivo)| Character| 255|
+| 58| COD_MACROAREA| Codice della Macroarea| Character| 50|
+| 59| COD_AREA| Codice dell'area| Character| 50|
+| 60| COD_ZONA| Codice dell'area| Character| 50|
+| 61| COD_MACROCATEGORIA| Codice della Macroarea| Character| 50|
+| 62| COD_CATEGORIA| Codice della Macroarea| Character| 50|
+| 63| COD_SOTTOCATEGORIA| Codice della Macroarea| Character| 50|
+| 64| FLG_NEW_CLIFOR| flag per specificare se questo cliente o fornitore deve abilitare l'inserimento di un nuovo cliente in fase di inserimento ordine| Integer| 2|
+| 65| DAT_ULT_MOD| Data di ultima modifica del record| DateTime| 16|
 
 ##io_clifor_age.dat
 tabella di anagrafica agenti di un cliente/fornitore
@@ -303,8 +295,9 @@ Tabella di anagrafica del fatturato mensile di un cliente/fornitore
 | 4| COD_CLIFOR| Codice Cliente / Fornitore| Character| 50|
 | 5| ANNO| Anno| Integer| 10|
 | 6| MESE| Mese| Integer| 10|
-| 7| FATTURATO| Fatturato Totale| Decimal| 28,8|
-| 8| DAT_ULT_MOD| Data di ultima modifica del record| DateTime| 16|
+| 7| COD_VALUTA| Codice della valuta| Character| 50|
+| 8| FATTURATO| Fatturato Totale| Decimal| 28,8|
+| 9| DAT_ULT_MOD| Data di ultima modifica del record| DateTime| 16|
 
 ##io_clifor_girovisita.dat
 Tracciato girovisite. In questo tracciato, per ogni agente, sono associati i clienti suddivisi per giorno della settimana. I dati qui contenuto vengono mostrati nella maschera di ricerca del cliente in fase di inserimento dell'ordine. In tale maschera i clienti sono suddivisi per giorno della settimana. In tal modo l'agente ha una sorta di agenda di quali clienti deve visitare in un determinato giorno.
@@ -352,13 +345,14 @@ Tabella di anagrafica per le righe documento di un cliente/fornitore
 | 9| QTA| Quantità| Decimal| 25,8|
 | 10| PRZ_LORDO| Prezzo lordo, comprensivo di IVA del prodotto | Decimal| 28,8|
 | 11| PRZ_NETTO| Prezzo Netto del prodotto | Decimal| 28,8|
-| 12| IMPORTO| Importo della riga del documento| Decimal| 28,8|
-| 13| SC_1| Sconto 1 in percentuale| Decimal| 6,3|
-| 14| SC_2| Sconto 2 in percentuale| Decimal| 6,3|
-| 15| DATA_CONFERMA| Data del documento| Date| 10|
-| 16| TIPO_CLIFOR| Tipologia (0=Cliente, 1=Fornitore)| Integer| 1|
-| 17| COD_CLIFOR| Codice Cliente / Fornitore| Character| 50|
-| 18| DAT_ULT_MOD| Data di ultima modifica del record| DateTime| 16|
+| 12| COD_VALUTA| Codice della valuta| Character| 50|
+| 13| IMPORTO| Importo della riga del documento| Decimal| 28,8|
+| 14| SC_1| Sconto 1 in percentuale| Decimal| 6,3|
+| 15| SC_2| Sconto 2 in percentuale| Decimal| 6,3|
+| 16| DATA_CONFERMA| Data del documento| Date| 10|
+| 17| TIPO_CLIFOR| Tipologia (0=Cliente, 1=Fornitore)| Integer| 1|
+| 18| COD_CLIFOR| Codice Cliente / Fornitore| Character| 50|
+| 19| DAT_ULT_MOD| Data di ultima modifica del record| DateTime| 16|
 
 ##io_clifor_scadoc.dat
 tabella delle scadenze dei documenti del cliente/fornitore
@@ -399,16 +393,18 @@ tabella anagrafica delle testate dei documenti di cliente/fornitore
 | 10| TIPODOC| Tipo documento gestionale (CLS-DDT; CLS-ORDINE; CLP-ORDINE)| Character| 14|
 | 11| TIPO| Tipo (es:DdT; Ordine Cl.)| Character| 20|
 | 12| SOTTOTIPO| Sottotipo (es: Ven/Acq; Normale)| Character| 20|
-| 13| NUMDOC| Numero del documento| Integer| 7|
-| 14| VALUTA| Valuta| Character| 4|
-| 15| TOTALEDOC| Totale del documento| Decimal| 28,8|
-| 16| TIPOSTATO_DOC| Tipo stato documento| Integer| 2|
-| 17| DESSTATO_DOC| Sottotipo (es: Ven/Acq; Normale)| Character| 100|
-| 18| DATA_FATTURA| Data della fattura| Date| 10|
-| 19| NUM_FATTURA| Numero di fattura| Character| 20|
-| 20| NOTE_DOC| Note libere| Character| 4000|
-| 21| DATA_CONFERMA| Data del documento| Date| 10|
-| 22| DAT_ULT_MOD| Data di ultima modifica del record| DateTime| 16|
+| 13| NUM_DOC| Numero del documento| Character| 20|
+| 14| COD_VALUTA| Codice della valuta| Character| 50|
+| 15| VALUTA| Valuta| Character| 4|
+| 16| TOTALEDOC| Totale del documento| Decimal| 28,8|
+| 17| TIPOSTATO_DOC| Tipo stato documento| Integer| 2|
+| 18| DESSTATO_DOC| Sottotipo (es: Ven/Acq; Normale)| Character| 100|
+| 19| DATA_FATTURA| Data della fattura| Date| 10|
+| 20| NUM_FATTURA| Numero di fattura| Character| 20|
+| 21| DES_NOTE| Note libere| Character| 4000|
+| 22| DATA_CONFERMA| Data del documento| Date| 10|
+| 23| DAT_ULT_MOD| Data di ultima modifica del record| DateTime| 16|
+| 24| DES_DOC| Note libere| Character| 255|
 
 ##io_condpag.dat
 Condizioni di pagamento
@@ -546,16 +542,17 @@ Righe delle offerte associate ai leads
 | 9| QTA| Quantità| Decimal| 25,8|
 | 10| PRZ_LORDO| Prezzo lordo, comprensivo di IVA del prodotto (non visibile in IPAD)| Decimal| 28,8|
 | 11| PRZ_NETTO| Prezzo Netto del prodotto (non visibile in IPAD)| Decimal| 28,8|
-| 12| IMPORTO| Importo della riga del documento| Decimal| 28,8|
-| 13| SC_1| Percentuale di SCONTO 1| Decimal| 14,6|
-| 14| SC_2| Percentuale Sconto 2| Decimal| 14,6|
-| 15| SC_3| Percentuale Sconto 3| Decimal| 14,6|
-| 16| SC_4| Percentuale Sconto 4| Decimal| 14,6|
-| 17| SC_5| Percentuale Sconto 5| Decimal| 14,6|
-| 18| SC_6| Percentuale Sconto 6| Decimal| 14,6|
-| 19| DATA_CONFERMA| Data del documento| Date| 10|
-| 20| COD_CLIFOR| Codice Cliente / Fornitore| Character| 50|
-| 21| DAT_ULT_MOD| Data di ultima modifica del record| DateTime| 16|
+| 12| COD_VALUTA| Codice della valuta| Character| 50|
+| 13| IMPORTO| Importo della riga del documento| Decimal| 28,8|
+| 14| SC_1| Percentuale di SCONTO 1| Decimal| 14,6|
+| 15| SC_2| Percentuale Sconto 2| Decimal| 14,6|
+| 16| SC_3| Percentuale Sconto 3| Decimal| 14,6|
+| 17| SC_4| Percentuale Sconto 4| Decimal| 14,6|
+| 18| SC_5| Percentuale Sconto 5| Decimal| 14,6|
+| 19| SC_6| Percentuale Sconto 6| Decimal| 14,6|
+| 20| DATA_CONFERMA| Data del documento| Date| 10|
+| 21| COD_CLIFOR| Codice Cliente / Fornitore| Character| 50|
+| 22| DAT_ULT_MOD| Data di ultima modifica del record| DateTime| 16|
 
 ##io_lead_sconti.dat
 Sconti associati ai leads
@@ -624,8 +621,9 @@ Testate delle offerte associate ai leads
 | 30| ANNULLATO| | Character| 255|
 | 31| CHIUSO| | Character| 255|
 | 32| NOTE| Note libere| Character| 4000|
-| 33| TOTALE_OFFERTA| Totale dell'offerta| Decimal| 28,8|
-| 34| DAT_ULT_MOD| Data di ultima modifica del record| DateTime| 16|
+| 33| COD_VALUTA| Codice della valuta| Character| 50|
+| 34| TOTALE_OFFERTA| Totale dell'offerta| Decimal| 28,8|
+| 35| DAT_ULT_MOD| Data di ultima modifica del record| DateTime| 16|
 
 ##io_leads.dat
 Anagrafica dei leads
@@ -641,38 +639,39 @@ Anagrafica dei leads
 | 7| INDIRIZZO| Indirizzo| Character| 255|
 | 8| CITTA| Città| Character| 255|
 | 9| CAP| Codice di avviamento postale| Character| 20|
-| 10| PROVINCIA| Provincia| Character| 255|
-| 11| NAZIONE| NAZIONE| Character| 255|
-| 12| DES_NOTE| Note libere| Character| 4000|
-| 13| PARTITA_IVA| Partita iva| Character| 50|
-| 14| CODICE_FISCALE| Codice fiscale| Character| 20|
-| 15| TELEFONO| Numero di telefono 1 del cliente/fornitore| Character| 255|
-| 16| FAX| Fax| Character| 255|
-| 17| CELLULARE| Telefono cellulare| Character| 255|
-| 18| EMAIL| Indirizzo email| Character| 255|
-| 19| INTERNET| WEB| Character| 255|
-| 20| LATITUDINE| Chiave univoca del record ereditata dai dati di origine| Character| 50,6|
-| 21| LONGITUDINE| Chiave univoca del record ereditata dai dati di origine| Character| 50,6|
-| 22| FLG_MOD_NEL_DISP| flag per specificare se questo cliente o fornitore può essere modificato nel dispositivo| Integer| 2|
-| 23| COD_STATUS| codice stato del lead| Character| 50|
-| 24| STATUS| descrizione dello stato del lead| Character| 255|
-| 25| COD_CATEGORIA| Codice della Macroarea| Character| 50|
-| 26| CATEGORIA| Categoria di appartenenza dell'azienda| Character| 255|
-| 27| COD_ZONA| Codice dell'area| Character| 50|
-| 28| ZONA| Zona (campo descrittivo)| Character| 255|
-| 29| DATA_ULT_OFFERTA| Data dell'ultima offerta| Date| 10|
-| 30| DATA_CREAZIONE| Data di creazione del record| Date| 10|
-| 31| BANCA1| Banca| Character| 255|
-| 32| BANCA2| Banca| Character| 255|
-| 33| COD_LISTINO| Codice del listino anagrafico| Character| 50|
-| 34| LISTINO| Listino anagrafico| Character| 255|
-| 35| FLG_PRIVACY| flag di autorizzazione privacy| Character| 10|
-| 36| DES_PRIVACY| descrizione per il flag di autorizzazione privacy| Character| 80|
-| 37| FLG_CONTATTATO| flag già contattato| Character| 10|
-| 38| DES_CONTATTATO| descrizione per il flag contattato| Character| 255|
-| 39| FLG_NON_INTERESSATO| flag non interessato| Character| 10|
-| 40| DES_NON_INTERESSATO| descrizione per il flag non interessato| Character| 255|
-| 41| DAT_ULT_MOD| Data di ultima modifica del record| DateTime| 16|
+| 10| PROVINCIA| Sigla della Provincia (es: FC per Forlì)| Character| 255|
+| 11| DES_PROVINCIA| Descrizione Provincia (Esempio Forlì)| Character| 255|
+| 12| NAZIONE| NAZIONE| Character| 255|
+| 13| DES_NOTE| Note libere| Character| 4000|
+| 14| PARTITA_IVA| Partita iva| Character| 50|
+| 15| CODICE_FISCALE| Codice fiscale| Character| 20|
+| 16| TELEFONO| Numero di telefono 1 del cliente/fornitore| Character| 255|
+| 17| FAX| Fax| Character| 255|
+| 18| CELLULARE| Telefono cellulare| Character| 255|
+| 19| EMAIL| Indirizzo email| Character| 255|
+| 20| INTERNET| WEB| Character| 255|
+| 21| LATITUDINE| Chiave univoca del record ereditata dai dati di origine| Character| 50,6|
+| 22| LONGITUDINE| Chiave univoca del record ereditata dai dati di origine| Character| 50,6|
+| 23| FLG_MOD_NEL_DISP| flag per specificare se questo cliente o fornitore può essere modificato nel dispositivo| Integer| 2|
+| 24| COD_STATUS| codice stato del lead| Character| 50|
+| 25| STATUS| descrizione dello stato del lead| Character| 255|
+| 26| COD_CATEGORIA| Codice della Macroarea| Character| 50|
+| 27| CATEGORIA| Categoria di appartenenza dell'azienda| Character| 255|
+| 28| COD_ZONA| Codice dell'area| Character| 50|
+| 29| ZONA| Zona (campo descrittivo)| Character| 255|
+| 30| DATA_ULT_OFFERTA| Data dell'ultima offerta| Date| 10|
+| 31| DATA_CREAZIONE| Data di creazione del record| Date| 10|
+| 32| BANCA1| Banca| Character| 255|
+| 33| BANCA2| Banca| Character| 255|
+| 34| COD_LISTINO| Codice del listino anagrafico| Character| 50|
+| 35| LISTINO| Listino anagrafico| Character| 255|
+| 36| FLG_PRIVACY| flag di autorizzazione privacy| Character| 10|
+| 37| DES_PRIVACY| descrizione per il flag di autorizzazione privacy| Character| 80|
+| 38| FLG_CONTATTATO| flag già contattato| Character| 10|
+| 39| DES_CONTATTATO| descrizione per il flag contattato| Character| 255|
+| 40| FLG_NON_INTERESSATO| flag non interessato| Character| 10|
+| 41| DES_NON_INTERESSATO| descrizione per il flag non interessato| Character| 255|
+| 42| DAT_ULT_MOD| Data di ultima modifica del record| DateTime| 16|
 
 ##io_listini_full.dat
 Tabella di anagrafica dei listini per prodotto completa.
