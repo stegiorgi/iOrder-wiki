@@ -13,7 +13,7 @@ Passi da effettuare
 I passi da effettuare sono i seguenti:
 
 1. Registrare un account dropbox
-2. Installare dropbox sul server del [server del cliente](pages/attivazione-nuovo-progetto.md)
+2. Installare dropbox sul [server del cliente](attivazione-nuovo-progetto.md)
 3. Comunicare ad apexnet l'account creato
 4. A questo punto Apexnet imposta la condivisione di una cartella per l'account creato.
 5. Il cliente deve accettare la condivisione della cartella.
