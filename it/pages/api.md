@@ -1,6 +1,5 @@
 Utilizzo delle API 
 ==================
-
 Introduzione
 -------------
 Questo articolo fornisce una linea guida di come effettuare la chiamata ai web service che restituiscono i dati inviati dai dispositivi all'AppManager e che dovranno essere importati all'interno del proprio gestionale cliente.
@@ -24,8 +23,6 @@ Esempio url da chiamare:
 Le variabili tra le parentesi graffe fino a {authKey} dipendono dall'installazione e configurazione definita da Apex-net pertanto se ancora non in possesso dell'indirizzo esatto si prega di richiederlo tramite apposito ticket.
 
 Vediamo ora le variabili che possono essere decise da voi stessi e modificabili in base alle vostre esigenze:
-
-| h |h | w|
 
 * **{authKey}:** Chiave di autenticazione che deve essere fornita da Apexnet
 
