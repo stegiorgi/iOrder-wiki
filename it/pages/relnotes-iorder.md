@@ -1,5 +1,45 @@
 ﻿# Note di Rilascio
 
+## Rel. 4.8.7 del 24/07/2014
+
+### Anomalie
+
+**_Fix funzionalità di ricerca sugli ordini inviati._** - (rif: 9275)
+
+Fix funzionalità di ricerca sugli ordini inviati.
+
+### Novità
+
+**_Aggiunto filtro su provincia nei lead._** - (rif: 9266)
+
+Aggiunto filtro su provincia nei lead.
+
+**_Aggiunta campo nazione in inserimento Leads_** - (rif: 9267)
+
+Aggiunta campo nazione in inserimento Leads
+
+**_Offerte leads in Valuta_** - (rif: 9268)
+
+E' stata implementata la visualizzazione delle offerte dei leads in valuta.
+
+**_Inserimento Nazione codificata su funzione "Nuovo leads"_** - (rif: 9269)
+
+In fase di inserimento di un nuovo leads, è ora possibile selezionare la città dalla lista di città disponibili.
+
+**_Offerte leads in Valuta_** - (rif: 9270)
+
+E' stata implementata la visualizzazione delle offerte dei leads in valuta.
+
+**_Modifcato il tipo documento relativo alle scadenze dei clienti._** - (rif: 9291)
+
+Ora non viene più mostrato sempre "Fattura n." su ogni scadenza, ma viene utilizzata una descrizione che dipende dal gestionale (Es: Fattura, DDT, ecc..).
+
+**_Sostituito il campo data conferma con data consegna nelle schede dei documenti._** - (rif: 9293)
+
+
+
+-------
+
 ## Rel. 4.7.8 del 01/07/2014
 
 ### Anomalie
@@ -527,29 +567,5 @@ Sono state implementate alcune modifiche al form di invio notifiche push da am:
 
 In fase di estrazione dati dal connettore, ora vengono inclusi anche i clienti associati ad agenti collegati alle destinazioni.
 
-
--------
-
-## Rel. 2.7.0 del 07/06/2013
-
-### Anomalie
-
-**_Scheda Prodotti: risolto problema di visualizzazione dati_** - (rif: 8783)
-
-Quando la descrizione dell'articolo e' molto lunga, i prezzi venivano sovrascritti nei dettagli "ultimi prezzi di acquisto e vendita"
-
-**_Filtro in ordini veloci_** - (rif: 8797)
-
-Corretto il filtro per destinazione
-
-### Modifiche
-
-**_Cambiata dicitura "Uguale sede" con "Nessuna destinazione diversa"_** - (rif: 8780)
-
-Nel form ordine, quando si sceglie destinazioni diverse ora viene proposto:
-- "Nessuna destinazione diversa" (default, in inserimento)
-- Tutte le altre destinazioni diverse associate al cliente
-
-Da ricordare che se viene preso un ordine da storico, la destinazione selezionata è l'ultima destinazione (quella presente sullo storico).
 
 
