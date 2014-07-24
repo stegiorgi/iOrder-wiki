@@ -117,10 +117,6 @@ E' prevista una nuova modalità di inserimento nuovi clienti contestualmente all
 
 
 
-**_Inserimento nuovi clienti in connettore iB_** - (rif: 9211)
-
-Il connettore di iB e' stato modificato per consentire l'inserimento di nuovi clienti in creazione nuovi ordini
-
 -------
 
 ## Rel. 4.5.0 del 30/04/2014
