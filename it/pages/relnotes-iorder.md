@@ -2,6 +2,27 @@
 
 ## Rel. 4.9.4 del 28/07/2014
 
+### Anomalie
+
+**_Risolta anomalia che richiedeva di ripetere l'invio dei dati diverse volte._** - (rif: 9289)
+
+I dati relativi ai leads, note clienti, clienti modificati ora non necessitano più di invii ripetuti per essere visualizzati come inviati.
+
+**_Risolta anomalia nella galleria, durante la selezione del cliente._** - (rif: 9314)
+
+Anche se veniva premuto il tasto "+", l'applicazione non proponeva la scelta del cliente.
+
+**_Corretta errata visualizzazione di righe vuote nel report copia commissione. Eliminato crash in eliminazione di assortimenti._** - (rif: 9323)
+
+Corretta errata visualizzazione di righe vuote nel report copia commissione. Eliminato crash in eliminazione di assortimenti.
+
+### Novità
+
+**_Aggiunta funzionalità di "Copia righe ordine da altra testata"_** - (rif: 9285)
+
+Aggiunto bottone "Copia righe ordine da un'altra testata" nel form della testata cliente: al tap verrà mostrata una lista di testate salvate sul dispositivo con lo stesso sviluppo della testata corrente.
+Una volta selezionata la testata, le righe ordine verranno copiate nella testata corrente.
+
 -------
 
 ## Rel. 4.8.7 del 24/07/2014
