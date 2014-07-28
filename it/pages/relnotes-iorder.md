@@ -1,5 +1,9 @@
 ﻿# Note di Rilascio
 
+## Rel. 4.9.4 del 28/07/2014
+
+-------
+
 ## Rel. 4.8.7 del 24/07/2014
 
 ### Anomalie
@@ -500,68 +504,5 @@ In inserimento ordine viene disabilitato il caricamento di default degli sconti 
 **_Risolto problema con destinazioni diverse._** - (rif: 8850)
 
 Risolto problema con destinazioni diverse.
-
--------
-
-## Rel. 2.8.0 del 27/06/2013
-
-### Anomalie
-
-**_Corretto posizionamento in selezione giro visite_** - (rif: 8807)
-
-Ora la lista dei clienti in inserimento ordine, nel caso di selezione giro visite, è correttamente posizionata alla sezione del giorno corrente
-
-**_Inibita selezione clienti bloccati in girovisite_** - (rif: 8808)
-
-Anche nel popup del girovisite non è possibile prendere ordini su clienti bloccati.
-
-**_Sistemata regressione galleria_** - (rif: 8811)
-
-Dal catalogo, apro una foto, scorro in avanti per una decina di foto, fine, mi posiziona nella foto su cui mi sono fermato, non più su quella di partenza.
-
-**_Incassi non visibili dopo aggiornamento_** - (rif: 8823)
-
-Ora si vedono gli incassi salvati associati a scadenze, anche dopo la ri-sincronizzazione delle scadenze.
-
-
-### Novità
-
-**_Blocchi modifica prezzi o sconti per utente_** - (rif: 8579)
-
-Vengono gestiti dei parametri lato license manager che impediscono la modifica di prezzi o sconti proposti dal sistema
-
-**_Aggiunto nuovo modulo: Reports_** - (rif: 8720)
-
-Aggiunto nuovo modulo contenente i report di BI.
-
-**_Cambiato il messaggio di errore nel caso di "Server non raggiungibile"_** - (rif: 8777)
-
-Ora questo tipo di errore viene mappato con un errore comprensibile per l'utente finale e non con "errore generico".
-
-**_Estesa la ricerca dei clienti_** - (rif: 8789)
-
-Nella ricerca del cliente o fornitore, oltre che per codice e descrizione, aggiunta ricerca per i seguenti attributi: 
-CAP, Provincia, Città, Indirizzo.
-
-**_Miglioramenti UI in modulo CRM_** - (rif: 8810)
-
-Rivista gestione filtri offerte (leads, stati, date).
-Miglioramenti visuali nella lista delle offerte.
-Inserito controllo obbligatorietà ragione sociale e gestione note in "popover" per inserimento nuovo lead.
-
-
-**_Invio notifiche push da am_** - (rif: 8828)
-
-Sono state implementate alcune modifiche al form di invio notifiche push da am:
-1. Aggiunta l'opzione tutti per mandare la notifica a tutti quanti.
-2. Aggiunto un messaggio che indica l'avvenuto invio
-3. Gestiti errori su contenuto messaggio
-
-### Modifiche
-
-**_Inclusa visibilita clienti anche per agenti associati a destinazioni_** - (rif: 8840)
-
-In fase di estrazione dati dal connettore, ora vengono inclusi anche i clienti associati ad agenti collegati alle destinazioni.
-
 
 
