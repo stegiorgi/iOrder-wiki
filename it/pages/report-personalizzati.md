@@ -46,6 +46,7 @@ Tale report comprende i seguenti segnaposti, popolati dinamicamente dall'applica
     *   {{#scontiRiga.withPosition(scontiRiga.sconti) }} ... {{/scontiRiga.withPosition(scontiRiga.sconti) }} : contenente la lista degli sconti applicati alla riga ordine.
       * {{sconto}} : contenente il singolo sconto.
 
+  *   {{orderNumber}}: Numero ordine (In realtà e' GUID temporaneo. Il numero ordine vero viene assegnato dal gestionale)
   *   {{appLogoSrc}} : valorizzato con il sorgente del logo visualizzato nel report.
   *   {{appName}} : valorizzato con il nome dell'applicazione.
   *   {{title}} : valorizzato con il titolo del report.
