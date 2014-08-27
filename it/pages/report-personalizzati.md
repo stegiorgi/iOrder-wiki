@@ -54,18 +54,59 @@ Tale report comprende i seguenti segnaposti, popolati dinamicamente dall'applica
   *   {{printDate}} : valorizzato con la data di creazione del documento.
   *   {{codAgente}} : valorizzato con il codice agente dell'utente loggato.
   *   {{desAgente}} : valorizzato con la descrizione dell'utente loggato.
-  *   {{codCliente}} : valorizzato con il codice del cliente relativo all'ordine.
-  *   {{ragSocCliente}} : valorizzato con il la ragione sociale del cliente relativo all'ordine.
-  *   {{indirizzoCliente}}  valorizzato con l'indirizzo del cliente relativo all'ordine.
-  *   {{capCliente}}  valorizzato con il CAP del cliente relativo all'ordine.
-  *   {{cittaCliente}}  valorizzato con la città del cliente relativo all'ordine.
-  *   {{provCliente}}  valorizzato con la provincia del cliente relativo all'ordine.
-  *   {{telefonoCliente}}  valorizzato con il telefono del cliente relativo all'ordine.
-  *   {{faxCliente}}  valorizzato con il fax del cliente relativo all'ordine.
-  *   {{emailCliente}}  valorizzato con l'email del cliente relativo all'ordine.
   *   {{#scontiIndexes.withPosition(scontiIndexes.indexes)}} ... {{/scontiIndexes.withPosition(scontiIndexes.indexes)}} : sezione contenente la lista di sconti applicati sull'ordine.
   *   {{index}} : valorizzato con l'indice relativo ad uno sconto.
   *   {{total}} : valorizzato con il totale del documento.
+  *   {{codCliente}} : valorizzato con il codice del cliente relativo all'ordine.
+  *   {{ragSocCliente}} : valorizzato con il la ragione sociale del cliente relativo all'ordine.
+  *   {{indirizzoCliente}} : valorizzato con l'indirizzo del cliente relativo all'ordine.
+  *   {{capCliente}} : valorizzato con il CAP del cliente relativo all'ordine.
+  *   {{cittaCliente}} : valorizzato con la città del cliente relativo all'ordine.
+  *   {{provCliente}} : valorizzato con la provincia del cliente relativo all'ordine.
+  *   {{telefonoCliente}} : valorizzato con il telefono del cliente relativo all'ordine.
+  *   {{faxCliente}} : valorizzato con il fax del cliente relativo all'ordine.
+  *   {{emailCliente}} : valorizzato con l'email del cliente relativo all'ordine.
+  *   {{tel2Cliente}} : valorizzato con il tel2 del cliente relativo all'ordine.
+  *   {{codFiscCliente}} : valorizzato con il codice fiscale del cliente relativo all'ordine.
+  *   {{partitaIvaCliente}} : valorizzato con la partita iva del cliente relativo all'ordine.
+  
+Inoltre, nel caso l'ordine sia relativo ad un nuovo cliente, è possibile utilizzare anche i seguenti segnaposti:
+  *   {{canaleVenditaCliente}} : valorizzato con il canale di vendita del nuovo cliente relativo all'ordine.
+  *   {{categoriaCliente}} : valorizzato con la categoria del nuovo cliente relativo all'ordine.
+  *   {{classeScontoCliente}} : valorizzato con la classe sconto del nuovo cliente relativo all'ordine.
+  *   {{noteCliente}} : valorizzato con le note del nuovo cliente relativo all'ordine.
+  *   {{ragSocConsegna}} : valorizzato con la ragione sociale della consegna relativa all'ordine.
+  *   {{indirizzoConsegna}} : valorizzato con l'indirizzo della consegna relativa all'ordine.
+  *   {{cittaConsegna}} : valorizzato con la citta della consegna relativa all'ordine.
+  *   {{capConsegna}} : valorizzato con il cap della consegna relativa all'ordine.
+  *   {{provConsegna}} : valorizzato con la provincia della consegna relativa all'ordine.
+  *   {{nazioneConsegna}} : valorizzato con la nazione della consegna relativa all'ordine.
+  *   {{telConsegna}} : valorizzato con il telefono della consegna relativa all'ordine.
+  *   {{faxConsegna}} : valorizzato con il fax della consegna relativa all'ordine.
+  *   {{cellConsegna}} : valorizzato con il cellulare della consegna relativa all'ordine.
+  *   {{portoConsegna}} : valorizzato con il porto della consegna relativa all'ordine.
+  *   {{desPag}} : valorizzato con descrizione del pagamento relativa all'ordine.
+  *   {{isNewCustomerOrder}} : valorizzato per identificare se si tratta di un ordine relativo ad un nuovo cliente; questo è un esempio di come utilizzarlo per visualizzare alcuni dati solo se si tratta di un ordine relativo ad un nuovo cliente:
+      ```html
+     
+       <tr>
+         <td><b>Agente:</b> {{desAgente}}</td>
+          <td><b>Rag. Soc.:</b> {{ragSocCliente}}</td>
+       </tr>
+       {{#isNewCustomerOrder}}
+       <tr>
+            <td><b>categoriaCliente:</b> {{categoriaCliente}}</td>
+            <td><b>classeScontoCliente:</b> {{classeScontoCliente}}</td>
+            <td><b>noteCliente:</b> {{noteCliente}}</td>
+       </tr>
+       <tr>
+            <td><b>partitaIvaCliente:</b> {{partitaIvaCliente}}</td>
+            <td><b>ragSocConsegna:</b> {{ragSocConsegna}}</td>
+            <td><b>indirizzoConsegna:</b> {{indirizzoConsegna}}</td>
+       </tr>
+       {{/isNewCustomerOrder}}
+       
+       ```
 
 
 ## Report ordini inviati
@@ -90,19 +131,59 @@ Tale report comprende i seguenti segnaposti, popolati dinamicamente dall'applica
   *   {{printDate}} : valorizzato con la data di creazione del documento.
   *   {{codAgente}} : valorizzato con il codice agente dell'utente loggato.
   *   {{desAgente}} : valorizzato con la descrizione dell'utente loggato.
-  *   {{codCliente}} : valorizzato con il codice del cliente relativo all'ordine.
-  *   {{ragSocCliente}} : valorizzato con il la ragione sociale del cliente relativo all'ordine.
-  *   {{indirizzoCliente}}  valorizzato con l'indirizzo del cliente relativo all'ordine.
-  *   {{capCliente}}  valorizzato con il CAP del cliente relativo all'ordine.
-  *   {{cittaCliente}}  valorizzato con la città del cliente relativo all'ordine.
-  *   {{provCliente}}  valorizzato con la provincia del cliente relativo all'ordine.
-  *   {{telefonoCliente}}  valorizzato con il telefono del cliente relativo all'ordine.
-  *   {{faxCliente}}  valorizzato con il fax del cliente relativo all'ordine.
-  *   {{emailCliente}}  valorizzato con l'email del cliente relativo all'ordine.
   *   {{#scontiIndexes.withPosition(scontiIndexes.indexes)}} ... {{/scontiIndexes.withPosition(scontiIndexes.indexes)}} : sezione contenente la lista di sconti applicati sull'ordine.
   *   {{index}} : valorizzato con l'indice relativo ad uno sconto.
   *   {{total}} : valorizzato con il totale del documento.
-
+  *   {{codCliente}} : valorizzato con il codice del cliente relativo all'ordine.
+  *   {{ragSocCliente}} : valorizzato con il la ragione sociale del cliente relativo all'ordine.
+  *   {{indirizzoCliente}} : valorizzato con l'indirizzo del cliente relativo all'ordine.
+  *   {{capCliente}} : valorizzato con il CAP del cliente relativo all'ordine.
+  *   {{cittaCliente}} : valorizzato con la città del cliente relativo all'ordine.
+  *   {{provCliente}} : valorizzato con la provincia del cliente relativo all'ordine.
+  *   {{telefonoCliente}} : valorizzato con il telefono del cliente relativo all'ordine.
+  *   {{faxCliente}} : valorizzato con il fax del cliente relativo all'ordine.
+  *   {{emailCliente}} : valorizzato con l'email del cliente relativo all'ordine.
+  *   {{tel2Cliente}} : valorizzato con il tel2 del cliente relativo all'ordine.
+  *   {{codFiscCliente}} : valorizzato con il codice fiscale del cliente relativo all'ordine.
+  *   {{partitaIvaCliente}} : valorizzato con la partita iva del cliente relativo all'ordine.
+  
+Inoltre, nel caso l'ordine sia relativo ad un nuovo cliente, è possibile utilizzare anche i seguenti segnaposti:
+  *   {{canaleVenditaCliente}} : valorizzato con il canale di vendita del nuovo cliente relativo all'ordine.
+  *   {{categoriaCliente}} : valorizzato con la categoria del nuovo cliente relativo all'ordine.
+  *   {{classeScontoCliente}} : valorizzato con la classe sconto del nuovo cliente relativo all'ordine.
+  *   {{noteCliente}} : valorizzato con le note del nuovo cliente relativo all'ordine.
+  *   {{ragSocConsegna}} : valorizzato con la ragione sociale della consegna relativa all'ordine.
+  *   {{indirizzoConsegna}} : valorizzato con l'indirizzo della consegna relativa all'ordine.
+  *   {{cittaConsegna}} : valorizzato con la citta della consegna relativa all'ordine.
+  *   {{capConsegna}} : valorizzato con il cap della consegna relativa all'ordine.
+  *   {{provConsegna}} : valorizzato con la provincia della consegna relativa all'ordine.
+  *   {{nazioneConsegna}} : valorizzato con la nazione della consegna relativa all'ordine.
+  *   {{telConsegna}} : valorizzato con il telefono della consegna relativa all'ordine.
+  *   {{faxConsegna}} : valorizzato con il fax della consegna relativa all'ordine.
+  *   {{cellConsegna}} : valorizzato con il cellulare della consegna relativa all'ordine.
+  *   {{portoConsegna}} : valorizzato con il porto della consegna relativa all'ordine.
+  *   {{desPag}} : : valorizzato con descrizione del pagamento relativa all'ordine.
+  *   {{isNewCustomerOrder}} : valorizzato per identificare se si tratta di un ordine relativo ad un nuovo cliente; questo è un esempio di come utilizzarlo per visualizzare alcuni dati solo se si tratta di un ordine relativo ad un nuovo cliente:
+      ```html
+     
+       <tr>
+         <td><b>Agente:</b> {{desAgente}}</td>
+          <td><b>Rag. Soc.:</b> {{ragSocCliente}}</td>
+       </tr>
+       {{#isNewCustomerOrder}}
+       <tr>
+            <td><b>categoriaCliente:</b> {{categoriaCliente}}</td>
+            <td><b>classeScontoCliente:</b> {{classeScontoCliente}}</td>
+            <td><b>noteCliente:</b> {{noteCliente}}</td>
+       </tr>
+       <tr>
+            <td><b>partitaIvaCliente:</b> {{partitaIvaCliente}}</td>
+            <td><b>ragSocConsegna:</b> {{ragSocConsegna}}</td>
+            <td><b>indirizzoConsegna:</b> {{indirizzoConsegna}}</td>
+       </tr>
+       {{/isNewCustomerOrder}}
+       
+       ```
 
 #### Report ordini veloci
 Tale report comprende i seguenti segnaposti, popolati dinamicamente dall'applicazione:
@@ -127,18 +208,59 @@ Tale report comprende i seguenti segnaposti, popolati dinamicamente dall'applica
   *   {{codAgente}} : valorizzato con il codice agente dell'utente loggato.
   *   {{desAgente}} : valorizzato con la descrizione dell'utente loggato.
   *   {{codCliente}} : valorizzato con il codice del cliente relativo all'ordine.
-  *   {{ragSocCliente}} : valorizzato con il la ragione sociale del cliente relativo all'ordine.
-  *   {{indirizzoCliente}}  valorizzato con l'indirizzo del cliente relativo all'ordine.
-  *   {{capCliente}}  valorizzato con il CAP del cliente relativo all'ordine.
-  *   {{cittaCliente}}  valorizzato con la città del cliente relativo all'ordine.
-  *   {{provCliente}}  valorizzato con la provincia del cliente relativo all'ordine.
-  *   {{telefonoCliente}}  valorizzato con il telefono del cliente relativo all'ordine.
-  *   {{faxCliente}}  valorizzato con il fax del cliente relativo all'ordine.
-  *   {{emailCliente}}  valorizzato con l'email del cliente relativo all'ordine.
   *   {{#scontiIndexes.withPosition(scontiIndexes.indexes)}} ... {{/scontiIndexes.withPosition(scontiIndexes.indexes)}} : sezione contenente la lista di sconti applicati sull'ordine.
   *   {{index}} : valorizzato con l'indice relativo ad uno sconto.
   *   {{total}} : valorizzato con il totale del documento.
+  *   {{ragSocCliente}} : valorizzato con il la ragione sociale del cliente relativo all'ordine.
+  *   {{indirizzoCliente}} : valorizzato con l'indirizzo del cliente relativo all'ordine.
+  *   {{capCliente}} : valorizzato con il CAP del cliente relativo all'ordine.
+  *   {{cittaCliente}} : valorizzato con la città del cliente relativo all'ordine.
+  *   {{provCliente}} : valorizzato con la provincia del cliente relativo all'ordine.
+  *   {{telefonoCliente}} : valorizzato con il telefono del cliente relativo all'ordine.
+  *   {{faxCliente}} : valorizzato con il fax del cliente relativo all'ordine.
+  *   {{emailCliente}} : valorizzato con l'email del cliente relativo all'ordine.
+  *   {{tel2Cliente}} : valorizzato con il tel2 del cliente relativo all'ordine.
+  *   {{codFiscCliente}} : valorizzato con il codice fiscale del cliente relativo all'ordine.
+  *   {{partitaIvaCliente}} : valorizzato con la partita iva del cliente relativo all'ordine.
+  
+  Inoltre, nel caso l'ordine sia relativo ad un nuovo cliente, è possibile utilizzare anche i seguenti segnaposti:
 
+  *   {{canaleVenditaCliente}} : valorizzato con il canale di vendita del nuovo cliente relativo all'ordine.
+  *   {{categoriaCliente}} : valorizzato con la categoria del nuovo cliente relativo all'ordine.
+  *   {{classeScontoCliente}} : valorizzato con la classe sconto del nuovo cliente relativo all'ordine.
+  *   {{noteCliente}} : valorizzato con le note del nuovo cliente relativo all'ordine.
+  *   {{ragSocConsegna}} : valorizzato con la ragione sociale della consegna relativa all'ordine.
+  *   {{indirizzoConsegna}} : valorizzato con l'indirizzo della consegna relativa all'ordine.
+  *   {{cittaConsegna}} : valorizzato con la citta della consegna relativa all'ordine.
+  *   {{capConsegna}} : valorizzato con il cap della consegna relativa all'ordine.
+  *   {{provConsegna}} : valorizzato con la provincia della consegna relativa all'ordine.
+  *   {{nazioneConsegna}} : valorizzato con la nazione della consegna relativa all'ordine.
+  *   {{telConsegna}} : valorizzato con il telefono della consegna relativa all'ordine.
+  *   {{faxConsegna}} : valorizzato con il fax della consegna relativa all'ordine.
+  *   {{cellConsegna}} : valorizzato con il cellulare della consegna relativa all'ordine.
+  *   {{portoConsegna}} : valorizzato con il porto della consegna relativa all'ordine.
+  *   {{desPag}} : : valorizzato con descrizione del pagamento relativa all'ordine.
+  *   {{isNewCustomerOrder}} : valorizzato per identificare se si tratta di un ordine relativo ad un nuovo cliente; questo è un esempio di come utilizzarlo per visualizzare alcuni dati solo se si tratta di un ordine relativo ad un nuovo cliente:
+      ```html
+     
+       <tr>
+         <td><b>Agente:</b> {{desAgente}}</td>
+          <td><b>Rag. Soc.:</b> {{ragSocCliente}}</td>
+       </tr>
+       {{#isNewCustomerOrder}}
+       <tr>
+            <td><b>categoriaCliente:</b> {{categoriaCliente}}</td>
+            <td><b>classeScontoCliente:</b> {{classeScontoCliente}}</td>
+            <td><b>noteCliente:</b> {{noteCliente}}</td>
+       </tr>
+       <tr>
+            <td><b>partitaIvaCliente:</b> {{partitaIvaCliente}}</td>
+            <td><b>ragSocConsegna:</b> {{ragSocConsegna}}</td>
+            <td><b>indirizzoConsegna:</b> {{indirizzoConsegna}}</td>
+       </tr>
+       {{/isNewCustomerOrder}}
+       
+       ```
 
 #### Report copia commissione
 Tale report comprende i seguenti segnaposti, popolati dinamicamente dall'applicazione:
@@ -171,11 +293,58 @@ Tale report comprende i seguenti segnaposti, popolati dinamicamente dall'applica
   * {{sconti}} : valorizzato con la lista di sconti presenti nella testata dell'ordine.
   * {{codAgente}} : valorizzato con il codice agente dell'utente loggato.
   * {{desAgente}} : valorizzato con la descrizione dell'utente loggato.
-  * {{ragSocCliente}} : valorizzato con la ragione sociale del cliente a cui si riferisce l'ordine.
-  * `{{#taglieIndexes.withPosition(taglieIndexes.indexes) }} ... {{/taglieIndexes.withPosition(taglieIndexes.indexes) }} : sezione contenente la lista di indici relativi alle taglie (numerata).
+  * {{#taglieIndexes.withPosition(taglieIndexes.indexes) }} ... {{/taglieIndexes.withPosition(taglieIndexes.indexes) }} : sezione contenente la lista di indici relativi alle taglie (numerata).
   * {{index}} : valorizzato con l'indice relativo a una taglia.
   * {{total}} : valorizzato con il totale del documento.
-
+  * {{ragSocCliente}} : valorizzato con la ragione sociale del cliente a cui si riferisce l'ordine.
+  * {{indirizzoCliente}} : valorizzato con l'indirizzo del cliente relativo all'ordine.
+  * {{capCliente}} : valorizzato con il CAP del cliente relativo all'ordine.
+  * {{cittaCliente}} : valorizzato con la città del cliente relativo all'ordine.
+  * {{provCliente}} : valorizzato con la provincia del cliente relativo all'ordine.
+  * {{telefonoCliente}} : valorizzato con il telefono del cliente relativo all'ordine.
+  * {{faxCliente}} : valorizzato con il fax del cliente relativo all'ordine.
+  * {{emailCliente}} : valorizzato con l'email del cliente relativo all'ordine.
+  * {{tel2Cliente}} : valorizzato con il tel2 del cliente relativo all'ordine.
+  * {{codFiscCliente}} : valorizzato con il codice fiscale del cliente relativo all'ordine.
+  * {{partitaIvaCliente}} : valorizzato con la partita iva del cliente relativo all'ordine.
+  
+Inoltre, nel caso l'ordine sia relativo ad un nuovo cliente, è possibile utilizzare anche i seguenti segnaposti:
+  * {{canaleVenditaCliente}} : valorizzato con il canale di vendita del nuovo cliente relativo all'ordine.
+  * {{categoriaCliente}} : valorizzato con la categoria del nuovo cliente relativo all'ordine.
+  * {{classeScontoCliente}} : valorizzato con la classe sconto del nuovo cliente relativo all'ordine.
+  * {{noteCliente}} : valorizzato con le note del nuovo cliente relativo all'ordine.
+  * {{ragSocConsegna}} : valorizzato con la ragione sociale della consegna relativa all'ordine.
+  * {{indirizzoConsegna}} : valorizzato con l'indirizzo della consegna relativa all'ordine.
+  * {{cittaConsegna}} : valorizzato con la citta della consegna relativa all'ordine.
+  * {{capConsegna}} : valorizzato con il cap della consegna relativa all'ordine.
+  * {{provConsegna}} : valorizzato con la provincia della consegna relativa all'ordine.
+  * {{nazioneConsegna}} : valorizzato con la nazione della consegna relativa all'ordine.
+  * {{telConsegna}} : valorizzato con il telefono della consegna relativa all'ordine.
+  * {{faxConsegna}} : valorizzato con il fax della consegna relativa all'ordine.
+  * {{cellConsegna}} : valorizzato con il cellulare della consegna relativa all'ordine.
+  * {{portoConsegna}} : valorizzato con il porto della consegna relativa all'ordine.
+  * {{desPag}} : : valorizzato con descrizione del pagamento relativa all'ordine.
+  *   {{isNewCustomerOrder}} : valorizzato per differenziare se si tratta di un ordine relativo ad un nuovo cliente oppure no; questo è un esempio di come utilizzarlo per visualizzare i dati del nuovo cliente solo se si tratta di un ordine relativo ad un nuovo cliente:
+      ```html
+     
+       <tr>
+         <td><b>Agente:</b> {{desAgente}}</td>
+          <td><b>Rag. Soc.:</b> {{ragSocCliente}}</td>
+       </tr>
+       {{#isNewCustomerOrder}}
+       <tr>
+            <td><b>categoriaCliente:</b> {{categoriaCliente}}</td>
+            <td><b>classeScontoCliente:</b> {{classeScontoCliente}}</td>
+            <td><b>noteCliente:</b> {{noteCliente}}</td>
+       </tr>
+       <tr>
+            <td><b>partitaIvaCliente:</b> {{partitaIvaCliente}}</td>
+            <td><b>ragSocConsegna:</b> {{ragSocConsegna}}</td>
+            <td><b>indirizzoConsegna:</b> {{indirizzoConsegna}}</td>
+       </tr>
+       {{/isNewCustomerOrder}}
+       
+       ```
 
 ## Report incassi
 Tale report comprende i seguenti segnaposti, popolati dinamicamente dall'applicazione:
