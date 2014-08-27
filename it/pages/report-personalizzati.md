@@ -166,6 +166,9 @@ Tale report comprende i seguenti segnaposti, popolati dinamicamente dall'applica
   * {{desDestinazione}} : valorizzato con la descrizione della destinazione presente nella testata dell'ordine.
   * {{desScatola}} : valorizzato con  la descrizione della scatola presente nella testata dell'ordine.
   * {{desEtichetta}} : valorizzato con la descrizione dell'etichetta presente nella testata dell'ordine.
+  * {{desPorto}} : valorizzato con la descrizione del porto presente nella testata dell'ordine.
+  * {{desModalitaSpedizione}} : valorizzato con la descrizione della modalità di spedizione presente nella testata dell'ordine.
+  * {{sconti}} : valorizzato con la lista di sconti presenti nella testata dell'ordine.
   * {{codAgente}} : valorizzato con il codice agente dell'utente loggato.
   * {{desAgente}} : valorizzato con la descrizione dell'utente loggato.
   * {{ragSocCliente}} : valorizzato con la ragione sociale del cliente a cui si riferisce l'ordine.
